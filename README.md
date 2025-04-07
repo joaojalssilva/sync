@@ -16,10 +16,6 @@ There are two versions of this tool:
 * **Command-Line Arguments:** The paths to the source and replica folders, the synchronization interval, and the log file path are configured using command-line arguments.
 * **Standard Library Usage:** The script primarily relies on built-in Python modules, avoiding external libraries for core folder synchronization logic.
 
-## Prerequisites
-
-* Python 3.x installed on your system.
-
 ## Usage
 
 1.  **Save the script:** Save the provided Python code.
