@@ -3,8 +3,8 @@
 This Python script synchronizes two folders: a source folder and a replica folder. It maintains a full, identical copy of the source folder in the replica folder, performing a one-way synchronization. The synchronization happens periodically, and all file operations (creation, copying, removal) are logged to both a file and the console.
 
 There are two versions of this tool:
-* Using shutil.copytree(): A version that leverages the built-in shutil.copytree() for copying entire directories.
-* Manual Synchronization: A version that avoids shutil.copytree() in case that was not allowed for the task.
+* Using shutil.copytree(): A version that leverages the built-in shutil.copytree() for copying entire directories. sync_folders.py
+* Manual Synchronization: A version that avoids shutil.copytree() in case that was not allowed for the task. sync_folders_v2.py
 
 
 
@@ -27,7 +27,7 @@ There are two versions of this tool:
 2.  **Run from the command line:** Open your terminal or command prompt and navigate to the directory where you saved the script. Execute the script with the required arguments:
 
     ```bash
-    python sync_folders.py <source_folder_path> <replica_folder_path> [-i <interval_seconds>] [-l <log_file_path>]
+    python sync_folders_v2.py <source_folder_path> <replica_folder_path> [-i <interval_seconds>] [-l <log_file_path>]
     ```
 
     **Arguments:**
@@ -42,7 +42,7 @@ There are two versions of this tool:
     To synchronize the folder `/home/user/source_data` to `/home/user/replica_backup` every 30 minutes and log to `backup.log`:
 
     ```bash
-    python folder_sync.py /home/user/source_data /home/user/replica_backup -i 1800 -l backup.log
+    python sync_folders_v2.py /home/user/source_data /home/user/replica_backup -i 1800 -l backup.log
     ```
 
 3.  **Running the script:** Once executed, the script will start the initial synchronization and then periodically synchronize the folders based on the specified interval. You will see log messages in your console, and the same information will be written to the log file.
