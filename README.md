@@ -3,8 +3,8 @@
 This Python script synchronizes two folders: a source folder and a replica folder. It maintains a full, identical copy of the source folder in the replica folder, performing a one-way synchronization. The synchronization happens periodically, and all file operations (creation, copying, removal) are logged to both a file and the console.
 
 There are two versions of this tool:
-Using shutil.copytree(): A version that leverages the built-in shutil.copytree() for copying entire directories.
-Manual Synchronization: A version that avoids shutil.copytree() in case that was not allowed for the task.
+* Using shutil.copytree(): A version that leverages the built-in shutil.copytree() for copying entire directories.
+* Manual Synchronization: A version that avoids shutil.copytree() in case that was not allowed for the task.
 
 
 
