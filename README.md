@@ -23,7 +23,7 @@ There are two versions of this tool:
 2.  **Run from the command line:** Open your terminal or command prompt and navigate to the directory where you saved the script. Execute the script with the required arguments:
 
     ```bash
-    python sync_folders_v2.py <source_folder_path> <replica_folder_path> [-i <interval_seconds>] [-l <log_file_path>]
+    python sync_folders_v2.py <source_folder_path> <replica_folder_path> -i <interval_seconds> -l <log_file_path>
     ```
 
     **Arguments:**
