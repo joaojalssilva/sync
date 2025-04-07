@@ -79,7 +79,6 @@ def sync_dirs(source, replica, logger):
     # Recursively synchronize common subdirectories
     for common_dir in dir_cmp.common_dirs:
         sync_dirs(os.path.join(source, common_dir), os.path.join(replica, common_dir), logger)
-        logger.info(f"Entering subdirectory: {common_dir}")
 
 def main():
     # Parse command line arguments
